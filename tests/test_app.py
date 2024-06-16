@@ -10,9 +10,9 @@ def test_read_root_deve_retornar_ok_e_hello_world():
     # Organização do teste (Arrange)
     client = TestClient(app)
 
-    # Ação do teste (act)
+    # Ação do teste (Act)
     response = client.get('/')
 
-    # Valida se está funcionando (assert)
+    # Valida se está funcionando (Assert)
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {'message': 'hello world'}
