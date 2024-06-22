@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from http import HTTPStatus
-from fastapi_webdev.schemas import Message
+from fast_zero.schemas import Message
 
 app = FastAPI()
 
